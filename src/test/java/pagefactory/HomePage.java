@@ -7,10 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
 
-	@FindBy(linkText ="Digital downloads")
+//	@FindBy(linkText ="Digital downloads")
 	public WebElement Digital_download_Link;
 	
-	@FindBy(xpath=("//a[@class='ico-wishlist'][1]"))
+//	@FindBy(xpath=("//a[@class='ico-wishlist'][1]"))
 	public WebElement wishlist_Btn;
 	
 	@FindBy(xpath=("//a[@href='/books']"))

@@ -6,7 +6,12 @@ import org.testng.ITestResult;
 public class Retry implements IRetryAnalyzer {
     private int count = 0;
     private static int maxTry = 3;
+    //IRetryAnalyzer in TestNG is an interface that can retry the failed test.
+    //IRetryAnalyzers retry() method returns true if we need to retry and re-execute our tests; otherwise, it returns false.
     
+    //There are two ways to retry tests using TestNG:
+   //Using the retryAnalyzer attribute in the @Test annotation
+   //Using Retry class with IAnnotationTransformer interface
    
     
     public boolean retry(ITestResult iTestResult) {
